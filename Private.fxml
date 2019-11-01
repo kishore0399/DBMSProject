@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #012;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PrivateController">
+   <children>
+      <Pane layoutX="657.0" layoutY="6.0" prefHeight="491.0" prefWidth="238.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label alignment="CENTER" layoutX="5.0" layoutY="7.0" prefHeight="41.0" prefWidth="230.0" text="SU-KHOON">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="BOTTOM_CENTER" layoutX="4.0" layoutY="65.0" prefHeight="17.0" prefWidth="230.0" text="Login">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Line endX="114.0" endY="-7.62939453125E-6" layoutX="121.0" layoutY="47.0" startX="-121.0" startY="-7.62939453125E-6" />
+            <Line endX="117.5999755859375" endY="-7.62939453125E-6" layoutX="120.0" layoutY="56.0" startX="-120.0" startY="-7.62939453125E-6" />
+            <TextField fx:id="hospital_id" alignment="CENTER" layoutX="9.0" layoutY="105.0" prefHeight="25.0" prefWidth="210.0" promptText="Username">
+               <effect>
+                  <Reflection fraction="0.85" topOpacity="0.54" />
+               </effect></TextField>
+            <PasswordField fx:id="hospital_password" alignment="CENTER" layoutX="5.0" layoutY="152.0" prefHeight="25.0" prefWidth="210.0" promptText="Password" />
+            <Button fx:id="Login" layoutX="14.0" layoutY="200.0" mnemonicParsing="false" onAction="#Login" prefHeight="29.0" prefWidth="79.0" style="-fx-background-color: #0c7; -fx-border-color: #001;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+            <Button fx:id="Sign_Up" layoutX="151.0" layoutY="200.0" mnemonicParsing="false" onAction="#Sign_up" style="-fx-background-color: #f00; -fx-border-color: #001;" text="Sign-Up" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+            <Label layoutX="110.0" layoutY="207.0" prefHeight="17.0" prefWidth="24.0" text="OR">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <Line endX="109.800048828125" layoutX="122.0" layoutY="271.0" startX="-115.79998779296875" />
+            <Label layoutX="75.0" layoutY="282.0" style="-fx-background-color: #fff;" text="Blood Bank">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button layoutX="88.0" layoutY="326.0" mnemonicParsing="false" onAction="#goLogin" prefHeight="27.0" prefWidth="61.0" style="-fx-background-color: #0c7; -fx-border-color: #000;" text="Login" textFill="WHITE" />
+            <Button layoutX="88.0" layoutY="395.0" mnemonicParsing="false" onAction="#Sign_up" style="-fx-background-color: #f12; -fx-border-color: #000;" text="Sign-Up" textFill="WHITE" />
+            <Label layoutX="108.0" layoutY="365.0" prefHeight="17.0" prefWidth="24.0" text="OR">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="452.0" mnemonicParsing="false" onAction="#goHome" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #444;" text="Home" textFill="WHITE" />
+            <Button layoutX="125.0" layoutY="452.0" mnemonicParsing="false" onAction="#goPublicHome" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: #444;" text="Public" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Accordion layoutX="1.0" layoutY="78.0" prefHeight="25.0" prefWidth="150.0" />
+      <Pane layoutX="3.0" layoutY="4.0" prefHeight="491.0" prefWidth="645.0" style="-fx-background-color: #fff;">
+         <children>
+            <TextArea layoutX="11.0" layoutY="179.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="299.0" prefWidth="629.0" promptText="©" text="                                                              SUKHOON&#10;&#10;                     A Blood Bank Management Organization developed to maintain a proper and orderly database and&#10;         records of all the blood transactions taking place in every   hospital and blood banks. &#10;                     Blood Bank: Available in City are helpful in daily transaction of blood .&#10;                                      Every Blood Bank in the city helps  in receiving blood through  their respective &#10;                                      sources and to Store the details of all the donors .&#10;                    The details of donors are helpful in any case of urgency of a certain blood at any hospital .  And &#10;also the transaction between any hospital and blood bank  is stored for any further information wehn  required.&#10;                      Hospitals:  They have an access to all the records or details of their donors  and recipients.&#10;                                   The recipients' details are stored for  future use if required.&#10;                                   The donors at the hospitals get an account in this application so that they can know if&#10; any hospitals are short of any blood type. &#10;           About Us:&#10;                                                         T.Kishore                        TilakRaj Singh Rao&#10;                                                            RNSIT                                        RNSIT&#10;&#10;                                                     ©SuKhoon 2019               " />
+            <Button fx:id="goBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" prefHeight="8.0" prefWidth="48.0" style="-fx-background-color: #c00; -fx-border-color: #001;" text="←" textFill="WHITE">
+               <font>
+                  <Font name="Californian FB" size="15.0" />
+               </font></Button>
+            <Label alignment="CENTER" layoutX="230.0" layoutY="50.0" prefHeight="34.0" prefWidth="171.0" text="SU-Khoon" textFill="#a20404">
+               <font>
+                  <Font name="Arial Narrow Bold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="98.0" fitWidth="108.0" layoutX="10.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/KISHORE/Desktop/images%20(5).png" />
+               </image>
+            </ImageView>
+            <Label layoutX="159.0" layoutY="117.0" prefHeight="28.0" prefWidth="333.0" text="   A BLOOD BASED MANAGEMENT  ORGANIZATION">
+               <font>
+                  <Font name="Agency FB" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

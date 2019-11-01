@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="900.0" style="-fx-background-color: #012;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PrivateController">
+   <children>
+      <Label fx:id="hospitalName" alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="24.0" prefHeight="38.0" prefWidth="900.0" text="HOSPITAL" textFill="#c70000">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TableView fx:id="HospitalsBank" layoutX="8.0" layoutY="203.0" prefHeight="330.0" prefWidth="893.0">
+         <columns>
+            <TableColumn fx:id="colBank" prefWidth="235.2000093460083" text="Blood Bank" />
+            <TableColumn fx:id="colCity" prefWidth="177.6000213623047" text="Location" />
+            <TableColumn fx:id="colContact" prefWidth="201.60003662109375" text="Contact" />
+            <TableColumn fx:id="colBlood" prefWidth="136.800048828125" text="Blood Group" />
+            <TableColumn fx:id="colQuantity" prefWidth="144.800048828125" text="Quantity" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="372.0" layoutY="145.0" prefHeight="26.0" prefWidth="177.0" text="Blood Bank" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="search" layoutX="22.0" layoutY="119.0" onAction="#searchBlood" promptText="Search Blood" />
+      <Button fx:id="goBackPrivate" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#goBackPrivate" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #F00;" text="Log Out" textFill="WHITE" />
+      <Button layoutX="188.0" layoutY="119.0" mnemonicParsing="false" style="-fx-background-color: #444;" text="Search" textFill="WHITE" />
+      <Button layoutX="703.0" layoutY="62.0" mnemonicParsing="false" onAction="#gotoRecipents" prefHeight="27.0" prefWidth="194.0" style="-fx-background-color: #444; -fx-border-color: #fff;" text="Recipents" textFill="WHITE" />
+      <Button layoutX="703.0" layoutY="105.0" mnemonicParsing="false" onAction="#goDonors" prefHeight="27.0" prefWidth="194.0" style="-fx-background-color: #444; -fx-border-color: #fff;" text="Donors" textFill="WHITE" />
+      <Button layoutX="703.0" layoutY="144.0" mnemonicParsing="false" onAction="#goManagers" prefHeight="27.0" prefWidth="194.0" style="-fx-background-color: #444; -fx-border-color: #fff;" text="Managers" textFill="WHITE" />
+   </children>
+</AnchorPane>

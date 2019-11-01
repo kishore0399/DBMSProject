@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="504.0" prefWidth="904.0" style="-fx-background-color: #012;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PublicController">
+   <children>
+      <Button fx:id="goBack" layoutY="1.0" mnemonicParsing="false" onAction="#goBack" prefHeight="26.0" prefWidth="68.0" style="-fx-background-color: #c00; -fx-border-color: #fff;" text="←" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Pane layoutX="658.0" layoutY="8.0" prefHeight="478.0" prefWidth="238.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label alignment="CENTER" layoutX="5.0" layoutY="7.0" prefHeight="41.0" prefWidth="230.0" text="SU-KHOON">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="BOTTOM_CENTER" layoutX="3.0" layoutY="56.0" prefHeight="17.0" prefWidth="230.0" text="Login">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+            <Line endX="114.0" endY="-7.62939453125E-6" layoutX="121.0" layoutY="47.0" startX="-121.0" startY="-7.62939453125E-6" />
+            <Line endX="117.5999755859375" endY="-7.62939453125E-6" layoutX="120.0" layoutY="56.0" startX="-120.0" startY="-7.62939453125E-6" />
+            <TextField fx:id="username" alignment="CENTER" layoutX="10.0" layoutY="83.0" prefHeight="25.0" prefWidth="210.0" promptText="Username">
+               <effect>
+                  <Reflection />
+               </effect></TextField>
+            <PasswordField fx:id="password" alignment="CENTER" layoutX="10.0" layoutY="123.0" prefHeight="25.0" prefWidth="210.0" promptText="Password" />
+            <Button id="Login" fx:id="Login" layoutX="14.0" layoutY="195.0" mnemonicParsing="false" onAction="#Login" prefHeight="29.0" prefWidth="79.0" style="-fx-background-color: #0c7; -fx-border-color: #fff;" stylesheets="@application.css" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button id="Sign_Up" fx:id="Sign_Up" layoutX="138.0" layoutY="195.0" mnemonicParsing="false" onAction="#Sign_up" style="-fx-background-color: #f00; -fx-border-color: #fff;" stylesheets="@application.css" text="Sign-Up" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <TextArea fx:id="info_field" layoutX="3.0" layoutY="261.0" prefHeight="214.0" prefWidth="230.0" style="-fx-background-color: #444; -fx-background-color: #012;" text="                       DONOR&#10;            Donors might login if not in &#10;   urgency . Donor ID might have &#10;    been produced at the time of &#10;   Donation . Donor can also Sign up&#10;  to create an account to access data of&#10; hospitals when any blood is required .&#10;                  RECIPIENT &#10; Recipients have to press the key to&#10; check the hospitals with required &#10;blood." />
+            <Line endX="128.39996337890625" layoutX="110.0" layoutY="257.0" startX="-110.0" strokeWidth="3.0" />
+            <TextField fx:id="usernameError" layoutX="7.0" layoutY="157.0" prefHeight="27.0" prefWidth="216.0" style="-fx-border-color: #fff; -fx-background-color: #fff;" />
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Pane>
+      <Label alignment="CENTER" layoutX="220.0" layoutY="21.0" prefHeight="18.0" prefWidth="290.0" text="GENERAL " textFill="#a20404">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Pane layoutX="14.0" layoutY="166.0" prefHeight="310.0" prefWidth="314.0" style="-fx-background-color: #234; -fx-border-color: #fff;">
+         <children>
+            <ImageView fitHeight="164.0" fitWidth="167.0" layoutX="75.0" layoutY="64.0" onMouseClicked="#GeneralView" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/KISHORE/Pictures/Saved%20Pictures/images%20(4).png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Button fx:id="General" layoutX="131.0" layoutY="248.0" mnemonicParsing="false" onAction="#GeneralView" style="-fx-background-color: #a10000; -fx-border-color: #001;" text="Donor" textFill="WHITE">
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+            <Label layoutX="106.0" text="Donor" textFill="#c7c7c7">
+               <font>
+                  <Font name="System Bold Italic" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="333.0" layoutY="166.0" prefHeight="310.0" prefWidth="314.0" style="-fx-background-color: #234; -fx-border-color: #fff;">
+         <children>
+            <ImageView fitHeight="164.0" fitWidth="164.0" layoutX="75.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/KISHORE/Pictures/Saved%20Pictures/images%20(3).png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Button fx:id="Private" layoutX="124.0" layoutY="240.0" mnemonicParsing="false" onAction="#RecipientView" style="-fx-background-color: #0cf; -fx-border-color: #000;" text="Recipient" textFill="WHITE">
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+            <Label layoutX="81.0" text="Recipient" textFill="#c7c7c7">
+               <font>
+                  <Font name="System Bold Italic" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="328.0" layoutY="76.0" prefHeight="18.0" prefWidth="174.0" text="WELCOME" textFill="#c2c1ca" />
+      <Label layoutX="182.0" layoutY="94.0" prefHeight="18.0" prefWidth="442.0" text="You can click the below buttons to view data without logging in ." textFill="#828282" />
+   </children>
+</AnchorPane>

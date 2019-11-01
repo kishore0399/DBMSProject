@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #012;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BankBloodController">
+   <children>
+      <TableView fx:id="tableBlood" layoutX="402.0" layoutY="128.0" prefHeight="279.0" prefWidth="488.0">
+         <columns>
+            <TableColumn fx:id="colBloodGroup" prefWidth="161.5999755859375" text="Blood" />
+            <TableColumn fx:id="colQuantity" prefWidth="167.199951171875" text="Quantity(in mL)" />
+            <TableColumn fx:id="colCost" prefWidth="157.5999755859375" text="Cost (per Unit) in Rs." />
+         </columns>
+      </TableView>
+      <TextField fx:id="bankID" layoutX="105.0" layoutY="117.0" promptText="Enter BloodBank ID" />
+      <TextField fx:id="bloodGroup" layoutX="105.0" layoutY="158.0" promptText="Enter Blood Group" />
+      <TextField fx:id="bloodQuantity" layoutX="105.0" layoutY="197.0" promptText="Quantity" />
+      <Button layoutX="187.0" layoutY="288.0" mnemonicParsing="false" onAction="#updateDetails" style="-fx-background-color: #911;" text="Update" textFill="WHITE" />
+      <TextField fx:id="BankID" layoutX="351.0" layoutY="88.0" promptText="Enter Bank ID" />
+      <Button layoutX="524.0" layoutY="88.0" mnemonicParsing="false" onAction="#viewDetails" style="-fx-background-color: #911;" text="View" textFill="WHITE" />
+      <Button layoutX="830.0" layoutY="11.0" mnemonicParsing="false" onAction="#goBack" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: #f11;" text="Back" textFill="WHITE" />
+      <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#logOut" style="-fx-background-color: #f12;" text="Log Out" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="489.0" layoutY="24.0" prefHeight="43.0" prefWidth="312.0" text="BLOODBANK" textFill="#e50000">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" layoutX="328.0" layoutY="426.0" prefHeight="26.0" prefWidth="575.0" promptText="NO SHORTAGE OF BLOOD" style="-fx-background-color: #012;" />
+      <Label layoutX="105.0" layoutY="74.0" text="Update Details" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bloodCost" layoutX="105.0" layoutY="234.0" promptText="Update Cost" />
+      <Line endX="-27.79998779296875" endY="265.8000183105469" layoutX="343.0" layoutY="171.0" startX="-27.79998779296875" startY="-137.39999389648438" stroke="#b50000" strokeWidth="2.0" />
+   </children>
+</AnchorPane>

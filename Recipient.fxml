@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #012;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RecipientController">
+   <children>
+      <Label layoutX="76.0" layoutY="14.0" prefHeight="28.0" prefWidth="154.0" text="RECIPIENT" textFill="#ac0000">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="recipientBlood" alignment="CENTER" layoutX="76.0" layoutY="58.0" prefHeight="13.0" prefWidth="212.0" promptText="BLOOD GROUP" />
+      <TextField fx:id="recipientCity" alignment="CENTER" layoutX="307.0" layoutY="58.0" prefHeight="26.0" prefWidth="224.0" promptText="City" />
+      <Button layoutX="565.0" layoutY="58.0" mnemonicParsing="false" onAction="#Search" style="-fx-background-color: #aaa;" text="Search" textFill="WHITE" />
+      <TableView fx:id="recipientTable" layoutX="82.0" layoutY="121.0" prefHeight="314.0" prefWidth="770.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="251.1999740600586" text="Hospital/BloodBank" />
+          <TableColumn fx:id="colCity" prefWidth="178.40005493164062" text="City" />
+            <TableColumn fx:id="colContact" prefWidth="133.5999755859375" text="Contact-Number" />
+            <TableColumn fx:id="colManager" prefWidth="208.0" text="Manager" />
+        </columns>
+      </TableView>
+      <Button layoutY="1.0" mnemonicParsing="false" onAction="#goBack2" style="-fx-background-color: #f12;" text="Back" textFill="WHITE" />
+      <Button layoutX="848.0" layoutY="1.0" mnemonicParsing="false" onAction="#Home" style="-fx-background-color: #00f;" text="Home" textFill="WHITE" />
+   </children>
+</AnchorPane>

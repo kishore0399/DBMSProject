@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1000.0" style="-fx-background-color: #012;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ManagerEntry">
+   <children>
+      <TextField fx:id="managerID" layoutX="32.0" layoutY="188.0" prefHeight="26.0" prefWidth="252.0" promptText="Manager ID" />
+      <TextField fx:id="hospitalID" layoutX="32.0" layoutY="237.0" prefHeight="26.0" prefWidth="252.0" promptText="Hospital ID" />
+      <TextField fx:id="managerName" layoutX="32.0" layoutY="285.0" prefHeight="26.0" prefWidth="252.0" promptText="Enter Manager Name" />
+      <TextField fx:id="managerCity" layoutX="32.0" layoutY="330.0" prefHeight="26.0" prefWidth="252.0" promptText="Enter Manager City" />
+      <TextField fx:id="managerContact" layoutX="32.0" layoutY="375.0" prefHeight="26.0" prefWidth="252.0" promptText="Contact Number" />
+      <TextField fx:id="bankID" layoutX="309.0" layoutY="236.0" prefHeight="26.0" prefWidth="192.0" promptText="Bank ID" />
+      <Button fx:id="enterData" layoutX="241.0" layoutY="429.0" mnemonicParsing="false" onAction="#enterData" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: #678;" text="Enter" textFill="WHITE" />
+      <TableView fx:id="managerTable" layoutX="524.0" layoutY="132.0" prefHeight="332.0" prefWidth="466.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="127.19998168945312" text="Manager Name" />
+          <TableColumn fx:id="colContact" prefWidth="82.4000244140625" text="Contact" />
+            <TableColumn fx:id="colHospital" prefWidth="116.0" text="Hospital Name" />
+            <TableColumn fx:id="colBloodBank" prefWidth="140.800048828125" text="BloodBank ID" />
+        </columns>
+      </TableView>
+      <Button fx:id="viewManagers" layoutX="724.0" layoutY="91.0" mnemonicParsing="false" onAction="#viewManagers" style="-fx-background-color: #444;" text="View Managers" textFill="WHITE" />
+      <Button fx:id="goBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #f11;" text="Log Out" textFill="WHITE" />
+      <Button fx:id="goHome" layoutX="885.0" layoutY="13.0" mnemonicParsing="false" onAction="#goHome" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: #444; -fx-border-color: #fff;" text="Home" textFill="WHITE" />
+      <Label layoutX="362.0" layoutY="18.0" text="MANAGER DATA" textFill="#840808">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="297.0" layoutY="233.0" prefHeight="33.0" prefWidth="12.0" text="/" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Line endX="21.79998779296875" endY="412.9999694824219" layoutX="495.0" layoutY="60.0" startX="21.79998779296875" startY="17.79999542236328" stroke="WHITE" />
+      <Label layoutX="166.0" layoutY="101.0" text="Enter Manager Details" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="900.0" style="-fx-background-color: #012;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BankHospitalsController">
+   <children>
+      <TableView fx:id="bankHospitals" layoutX="14.0" layoutY="205.0" prefHeight="330.0" prefWidth="579.0">
+         <columns>
+            <TableColumn fx:id="colHospital" prefWidth="175.20003700256348" text="Hospitals" />
+            <TableColumn fx:id="colLocation" prefWidth="164.79998779296875" text="Location" />
+            <TableColumn fx:id="colContact" prefWidth="116.79998779296875" text="Contact" />
+            <TableColumn fx:id="colBlood" prefWidth="109.60000610351562" text="Blood Group" />
+         </columns>
+      </TableView>
+      <TextField fx:id="searchBlood" layoutX="14.0" layoutY="113.0" promptText="Search Blood" />
+      <Button layoutX="707.0" layoutY="30.0" mnemonicParsing="false" onAction="#goDonors" prefHeight="26.0" prefWidth="178.0" style="-fx-background-color: #333;" text="Donors" textFill="WHITE" />
+      <Label fx:id="bloodbank" alignment="CENTER" layoutX="69.0" layoutY="18.0" prefHeight="50.0" prefWidth="738.0" text="BLOOD BANK" textFill="#9f0000">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="215.0" layoutY="157.0" prefHeight="26.0" prefWidth="177.0" text="Hospitals" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="24.0" layoutY="18.0" mnemonicParsing="false" onAction="#goHome" prefHeight="14.0" prefWidth="89.0" style="-fx-background-color: #f00;" text="Log Out" textFill="WHITE" />
+      <TableView fx:id="tableBlood" layoutX="607.0" layoutY="205.0" prefHeight="330.0" prefWidth="282.0">
+        <columns>
+          <TableColumn fx:id="colBloodGroup" prefWidth="137.599853515625" text="Blood" />
+          <TableColumn fx:id="colCost" prefWidth="113.60009765625" text="Cost" />
+        </columns>
+      </TableView>
+      <Button layoutX="189.0" layoutY="67.0" mnemonicParsing="false" onAction="#bloodDetails" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: #345;" text="Blood Details" textFill="WHITE" />
+      <Button layoutX="189.0" layoutY="112.0" mnemonicParsing="false" onAction="#searchBlood" style="-fx-background-color: #34f;" text="Search" textFill="#e2e2e2" />
+      <TextField fx:id="bankID" layoutX="14.0" layoutY="68.0" promptText="Enter ID Again" />
+      <Button layoutX="707.0" layoutY="68.0" mnemonicParsing="false" onAction="#goManagers" prefHeight="26.0" prefWidth="178.0" style="-fx-background-color: #333;" text="Managers" textFill="WHITE" />
+      <Button layoutX="707.0" layoutY="112.0" mnemonicParsing="false" onAction="#updateBlood" prefHeight="26.0" prefWidth="178.0" style="-fx-background-color: #333;" text="Update Blood Details" textFill="WHITE" />
+   </children>
+</AnchorPane>

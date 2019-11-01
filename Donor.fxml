@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #012;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <ImageView fitHeight="104.0" fitWidth="116.0" layoutX="737.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="373.0" layoutY="14.0" text="DONOR" textFill="#a20404">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="61.0" text="Name :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="245.0" layoutY="101.0" text="Age:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="488.0" layoutY="61.0" text="Weight:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="489.0" layoutY="101.0" text="Height:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="299.0" layoutY="54.0" promptText="Name" />
+      <TextField fx:id="age" layoutX="299.0" layoutY="96.0" promptText="Age" />
+      <TextField fx:id="weight" layoutX="548.0" layoutY="57.0" promptText="Weight" />
+      <TextField fx:id="height" layoutX="548.0" layoutY="96.0" promptText="Height" />
+      <TextField fx:id="bloodGroup" layoutX="149.0" layoutY="69.0" onAction="#searchHospitals" prefHeight="54.0" prefWidth="71.0" promptText="Blood Type" />
+      <TableView fx:id="tableView" editable="true" layoutX="22.0" layoutY="188.0" prefHeight="303.0" prefWidth="818.0" tableMenuButtonVisible="true">
+         <columns>
+            <TableColumn fx:id="colHospital" prefWidth="243.20002365112305" text="Hospital" />
+            <TableColumn fx:id="colCity" prefWidth="123.19998168945312" sortType="DESCENDING" text="City" />
+            <TableColumn fx:id="colState" prefWidth="109.5999755859375" sortType="DESCENDING" text="State" />
+            <TableColumn fx:id="colBlood" prefWidth="168.0" text="Contact" />
+            <TableColumn fx:id="colUrgency" prefWidth="158.39996337890625" text="Donated On" />
+         </columns>
+      </TableView>
+      <Button fx:id="goBack2" layoutY="1.0" mnemonicParsing="false" onAction="#Logout" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: #c00;" text="LOGOUT" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <TextField fx:id="donatedOn" layoutX="547.0" layoutY="139.0" prefHeight="26.0" prefWidth="149.0" promptText="Date" />
+      <Label layoutX="435.0" layoutY="143.0" prefHeight="18.0" prefWidth="107.0" text="Last Donated On: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="213.0" layoutY="148.0" mnemonicParsing="false" onAction="#listHospitals" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: #546;" text="List" textFill="WHITE" />
+      <TextField fx:id="donorID" layoutX="28.0" layoutY="148.0" prefHeight="26.0" prefWidth="167.0" promptText="Enter your ID again" />
+   </children>
+</AnchorPane>

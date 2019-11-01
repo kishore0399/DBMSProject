@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="550.0" prefWidth="900.0" style="-fx-background-color: #012;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+   <children>
+      <TableView layoutX="8.0" layoutY="198.0" prefHeight="342.0" prefWidth="885.0">
+         <columns>
+            <TableColumn prefWidth="121.5999984741211" text="Recipient ID" />
+            <TableColumn prefWidth="120.79998779296875" text="Recipient Name" />
+            <TableColumn minWidth="4.800048828125" prefWidth="169.5999755859375" text="Location" />
+            <TableColumn prefWidth="57.60003662109375" text="Sex" />
+            <TableColumn prefWidth="70.39999389648438" text="Age" />
+            <TableColumn prefWidth="93.5999755859375" text="Blood Group" />
+            <TableColumn prefWidth="137.60003662109375" text="Contact" />
+            <TableColumn prefWidth="109.60009765625" text="Recieved On:" />
+         </columns>
+      </TableView>
+      <Label fx:id="hospitalName" alignment="CENTER" contentDisplay="CENTER" layoutX="167.0" layoutY="42.0" prefHeight="43.0" prefWidth="572.0" text="HOSPITAL">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#820000" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="114.0" layoutY="97.0" text="RECIPIENT TABLE" textFill="#aa0000">
+         <font>
+            <Font name="Calibri Bold" size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="699.0" layoutY="157.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="113.0" style="-fx-background-color: #f11;" text="Enter Details" textFill="WHITE" />
+      <Label layoutX="20.0" layoutY="149.0" prefHeight="18.0" prefWidth="287.0" text="Enter Recipient entries ." textFill="WHITE" />
+      <Label layoutX="20.0" layoutY="167.0" prefHeight="18.0" prefWidth="362.0" text="Remember : Recipient ID must not be NULL" textFill="WHITE" />
+   </children>
+</AnchorPane>

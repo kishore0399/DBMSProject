@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #012;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="application.AddDonorsBank">
+   <children>
+      <AnchorPane layoutX="5.0" layoutY="14.0" prefHeight="550.0" prefWidth="900.0" style="-fx-background-color: #012;">
+         <children>
+            <Button layoutX="127.0" layoutY="476.0" mnemonicParsing="false" onAction="#donorDetails" prefHeight="26.0" prefWidth="175.0" style="-fx-background-color: #f11;" text="Enter Details" textFill="WHITE" />
+            <Label fx:id="hospitalName" alignment="CENTER" contentDisplay="CENTER" layoutX="191.0" layoutY="9.0" prefHeight="43.0" prefWidth="572.0" text="HOSPITAL" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="294.0" layoutY="63.0" text="ADD DONORS" textFill="#aa0000">
+               <font>
+                  <Font name="Calibri Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="537.0" layoutY="79.0" prefHeight="18.0" prefWidth="192.0" text="Enter Donor entries ." textFill="WHITE" />
+            <Label layoutX="499.0" layoutY="95.0" prefHeight="18.0" prefWidth="267.0" text="Remember : DONOR ID must not be NULL" textFill="WHITE" />
+            <TextField fx:id="donorID" layoutX="85.0" layoutY="119.0" prefHeight="26.0" prefWidth="258.0" promptText="Create A DONOR ID" />
+            <TextField fx:id="donorName" layoutX="86.0" layoutY="165.0" prefHeight="26.0" prefWidth="258.0" promptText="Enter Donor Name" />
+            <TextField fx:id="donorAge" layoutX="86.0" layoutY="205.0" prefHeight="26.0" prefWidth="258.0" promptText="Enter Age" />
+            <TextField fx:id="donorSex" layoutX="85.0" layoutY="244.0" prefHeight="26.0" prefWidth="258.0" promptText="Enter Sex" />
+            <TextField fx:id="donorContact" layoutX="86.0" layoutY="335.0" prefHeight="26.0" prefWidth="258.0" promptText="Enter a Contact Number" />
+            <TextField fx:id="donorCity" layoutX="86.0" layoutY="383.0" prefHeight="26.0" prefWidth="258.0" promptText="Enter City" />
+            <TextField fx:id="donorPassword" layoutX="477.0" layoutY="178.0" prefHeight="26.0" prefWidth="258.0" promptText="Create a Password" />
+            <TextField fx:id="hospitalID" layoutX="477.0" layoutY="231.0" prefHeight="26.0" prefWidth="258.0" promptText="Enter your Organization ID" />
+            <TextField fx:id="donorDate" layoutX="477.0" layoutY="132.0" prefHeight="26.0" prefWidth="258.0" promptText="Enter the Date" />
+            <TextField fx:id="donorBlood" layoutX="86.0" layoutY="289.0" prefHeight="26.0" prefWidth="258.0" promptText="Enter Blood Group" />
+            <Button layoutX="826.0" layoutY="8.0" mnemonicParsing="false" onAction="#goBack" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: #f11;" text="Back" textFill="WHITE" />
+            <Button layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onAction="#logOut" style="-fx-background-color: #f12;" text="Log Out" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
